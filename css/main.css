@@ -1,1 +1,29 @@
 /* Put your code here */
+
+#grid {
+    display: grid;
+    grid-template: 80px 300px 120px / 70%  auto;
+
+    grid-row: auto;
+    grid-column: auto;
+
+    gap: 10px;
+}
+
+#grid div:nth-child(1) {
+    grid-column: 1 /span 2;
+    background-color:black;
+}
+
+#grid div:nth-child(2) {
+    background-color: rgb(196, 196, 196);
+}
+
+#grid div:nth-child(3) {
+    background-color: rgb(199, 198, 198);
+}
+
+#grid div:nth-child(4) {
+    grid-column: 1 / span 2;
+    background-color:rgb(89, 89, 89);
+}
